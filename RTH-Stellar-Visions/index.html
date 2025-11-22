@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RTH Stellar Visions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="starfield"></canvas>
+    <div class="hero-content">
+      <img src="assets/logo.svg" alt="RTH Stellar Visions" class="logo"/>
+      <h1>Capture the Sky on Your Special Moment</h1>
+      <button id="buildStarMapBtn">Build Your Star Map</button>
+    </div>
+  </section>
+
+  <!-- STAR MAP BUILDER -->
+  <section id="star-map-builder">
+    <div id="quiz"></div>
+    <div id="previews">
+      <canvas id="starMapCanvas"></canvas>
+      <div id="starMap3DContainer"></div>
+    </div>
+  </section>
+
+  <!-- CRYSTAL SELECTION -->
+  <section id="crystal-selection"></section>
+
+  <!-- CHECKOUT -->
+  <section id="checkout">
+    <button id="checkoutBtn">Complete Purchase</button>
+  </section>
+
+  <script type="module" src="js/starfield.js"></script>
+  <script type="module" src="js/starMap2D.js"></script>
+  <script type="module" src="js/starMap3D.js"></script>
+  <script type="module" src="js/quizFlow.js"></script>
+  <script type="module" src="js/crystalSelection.js"></script>
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>
+
